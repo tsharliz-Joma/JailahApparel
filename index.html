@@ -30,6 +30,8 @@
     </head>
 
     <body style="margin : 0px; overflow : hidden; ">
+
+        <a-asset-items id="bot" src="./gltf-models/bot-scene.gltf"></a-asset-items>
         
 
         <a-scene 
@@ -38,7 +40,21 @@
         embedded
         arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
         >
+
+        <a-nft 
+        type="nft"
+        url="https://github.com/tsharliz-Joma/JailahApparel/blob/main/ImageTracking/Now%20Showing%20(1).png"
+        smooth="true"
+        smooothCount="10"
+        smoothTolerance=".01"
+        smoothThreshold="5"
+        >
+
+        <a-entity gltf-model="#bot" position="100 100 0" scale="5 5 5"></a-entity>
+
+        </a-nft>
     
+        <a-entity camera device-orientation-permission-ui="enabled: false"></a-entity>
     </a-scene>
 
     </body>
