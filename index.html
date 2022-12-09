@@ -31,15 +31,11 @@
 
     <body style="margin : 0px; overflow : hidden; ">
 
-        <a-asset-items id="bot" src="./gltf-models/bot-scene.gltf"></a-asset-items>
-        
+        <a-assets>
+            <a-asset-items id="bot" src="./gltf-models/bot-scene.gltf"></a-asset-items>
+        </a-assets>
 
-        <a-scene 
-        vr-mode-ui="enabled: false;"
-        renderer="logarithmicDepthBuffer: true;"
-        embedded
-        arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;"
-        >
+        <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
 
         <a-nft 
         type="nft"
