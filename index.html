@@ -3,7 +3,6 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <title>Plain Jailah T-Shirt</title>
-
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
         <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
         <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
@@ -32,13 +31,17 @@
     </head>
 
     <body style="margin : 0px; overflow : hidden; ">
-        <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
+        <div class="arjs-loader">
+            <div>Loading, please wait...</div>
+        </div>
+
+        <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;, precision: medium;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
 
             <a-assets>
-                <a-asset-items id="bot" src="./gltf-models/bot-scene.gltf"></a-asset-items>
+                <a-asset-items id="bot" src="https://raw.githack.com/tsharliz-Joma/JailahApparel/main/gltf-models/bot-scene.gltf"></a-asset-items>
             </a-assets>
             
-            <a-nft type="nft" url="https://github.com/tsharliz-Joma/JailahApparel/blob/main/ZFTfolder/TankZFT"
+            <a-nft type="nft" url="https://raw.githack.com/tsharliz-Joma/JailahApparel/tree/main/ZFTfolder/TankZFT"
             smooth="true"
             smooothCount="10"
             smoothTolerance=".01"
