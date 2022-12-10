@@ -5,7 +5,9 @@
         <title>Plain Jailah T-Shirt</title>
 
         <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
-    <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/aframevr/aframe@1c2407b26c61958baa93967b5412487cd94b290b/dist/aframe-master.min.js"></script>
+        <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar-nft.js"></script>
 
     <style>
         .arjs-loader {
@@ -30,27 +32,23 @@
     </head>
 
     <body style="margin : 0px; overflow : hidden; ">
-
-        <a-assets>
-            <a-asset-items id="bot" src="./gltf-models/bot-scene.gltf"></a-asset-items>
-        </a-assets>
-
         <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
 
-        <a-nft 
-        type="nft"
-        url="https://raw.githubusercontent.com/tsharliz-Joma/JailahApparel/blob/main/ImageTracking/tank2"
-        smooth="true"
-        smooothCount="10"
-        smoothTolerance=".01"
-        smoothThreshold="5"
-        >
-
-        <a-entity gltf-model="#bot" position="100 100 0" scale="5 5 5"></a-entity>
-
-        </a-nft>
+            <a-assets>
+                <a-asset-items id="bot" src="./gltf-models/bot-scene.gltf"></a-asset-items>
+            </a-assets>
+            
+            <a-nft type="nft" url="https://github.com/tsharliz-Joma/JailahApparel/blob/main/ZFTfolder/TankZFT"
+            smooth="true"
+            smooothCount="10"
+            smoothTolerance=".01"
+            smoothThreshold="5"
+            >
+                <a-entity gltf-model="#bot" position="100 100 0" scale="5 5 5"></a-entity>
+            </a-nft>
     
-        <a-entity camera device-orientation-permission-ui="enabled: false"></a-entity>
+            <a-entity camera device-orientation-permission-ui="enabled: false"></a-entity>
+
     </a-scene>
 
     </body>
