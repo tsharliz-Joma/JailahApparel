@@ -25485,16 +25485,16 @@
   ],
   "images": [
     {
-      "uri": "../Textures/Bee-Textures/material_0_diffuse.png"
+      "uri": "../Textures/Bot-Textures/Bee-Textures/material_0_diffuse.png"
     },
     {
-      "uri": "../Textures/Bee-Textures/material_0_specularGlossiness.png"
+      "uri": "../Textures/Bot-Textures/Bee-Textures/material_0_specularGlossiness.png"
     },
     {
-      "uri": "../Textures/Bee-Textures/material_0_normal.png"
+      "uri": "../Textures/Bot-Textures/Bee-Textures/material_0_normal.png"
     },
     {
-      "uri": "../Textures/Bee-Textures/material_0_occlusion.png"
+      "uri": "../Textures/Bot-Textures/Bee-Textures/material_0_occlusion.png"
     }
   ],
   "materials": [
