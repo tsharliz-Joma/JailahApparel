@@ -36,16 +36,17 @@
         <a-scene vr-mode-ui="enabled: false;" renderer="logarithmicDepthBuffer: true;, precision: medium;" embedded arjs="trackingMethod: best; sourceType: webcam;debugUIEnabled: false;" >
 
             <a-assets>
-                <a-asset-items id="bot" src="https://raw.githack.com/tsharliz-Joma/JailahApparel/main/gltf-models/bot-scene.gltf"></a-asset-items>
+                <a-asset-items id="bot" src="https://raw.githubusercontent.com/tsharliz-Joma/JailahApparel/main/gltf-models/bot-scene.gltf"></a-asset-items>
             </a-assets>
             
-            <a-nft type="nft" url="https://raw.githack.com/tsharliz-Joma/JailahApparel/tree/main/ZFTfolder/TankZFT"
+            <a-nft type="nft" url="https://raw.githack.com/tsharliz-Joma/JailahApparel/tree/main/TankZFT/smallerTank"
             smooth="true"
             smooothCount="10"
             smoothTolerance=".01"
             smoothThreshold="5"
             >
                 <a-entity gltf-model="#bot" position="100 100 0" scale="5 5 5"></a-entity>
+                <a-box color="tomato" depth="2" height="4" width="0" ></a-box>
             </a-nft>
     
             <a-entity camera device-orientation-permission-ui="enabled: false"></a-entity>
